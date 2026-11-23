@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/api/v1/fonts/(.*)", "destination": "https://doory.art/api/v1/fonts/$1" },
+    { "source": "/api/v1/elements/(.*)", "destination": "https://doory.art/api/v1/elements/$1" },
+    { "source": "/api/v1/templates/(.*)", "destination": "https://doory.art/api/v1/templates/$1" },
+    { "source": "/api/v1/template-categories/(.*)", "destination": "https://doory.art/api/v1/template-categories/$1" },
+    { "source": "/media/(.*)", "destination": "https://doory.art/media/$1" },
+    { "source": "/((?!api/|ws|media/|admin|static/).*)", "destination": "/index.html" }
+  ]
+}
